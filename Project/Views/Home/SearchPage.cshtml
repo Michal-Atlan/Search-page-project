@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Search Page";
+}
+
+<h2 style="color:rebeccapurple;font-family:cursive;font-size:40px ">Search Page</h2>
+
+<div>
+    <div>
+        <span style="color:blueviolet;font-size:20px">Type the repository you would like to search:</span>
+        <input type="text" id="RepositoryName">
+    </div>
+    <br />
+    <div>
+        <button class="col-sm-12" id="Search" style="margin-top:20px;font-size:20px; background-color:cadetblue;color:white;font-family:serif">~Press Here For Searching!~</button>
+    </div>
+    <br />
+    <div id="RepBookmark" class="col-sm-12">
+        <table id="table" class="order-table table" name="table1" required></table>
+    </div>
+</div>
+<input type="button" class="col-sm-12" style="height:40px; background-color:cadetblue;color:white; font-size:20px; font-family:serif" value="Go to bookmarked repositories ==>" onclick="location.href='@Url.Action("BookMarkedRepositories", "Home")'" />
+
+

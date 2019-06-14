@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "BookMarkedRepositories";
+}
+
+<h2 style="color:rebeccapurple;font-family:cursive;font-size:40px ">Bookmarked Repositories</h2>
+
+<div id="RepBookmarked" class="col-sm-12">
+    <table id="table" class="order-table table" name="table1" required></table>
+</div>
+
+<script>
+    //after the view was loaded, load the bookmarked items.
+    $(document).ready(function () {
+        displayBookMarkedRepositories();
+    })
+</script>
+
